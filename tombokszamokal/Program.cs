@@ -41,6 +41,7 @@ namespace tombokszamokal
 
             static void Main(string[] args)
         {
+            feltoltes();
             osszegzes();
             negativdb();
         }
