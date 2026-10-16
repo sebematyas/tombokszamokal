@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Tracing;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.Tracing;
 
 namespace tombokszamokal
 {
@@ -18,9 +19,30 @@ namespace tombokszamokal
                 Console.WriteLine(item + " ");
             }
         }
+        static void osszegzes()
+        {
+            int osszeg = 0;
+            foreach (int item in tomb)
+            {
+                osszeg += item;
+            }
+        }
+        static void negativdb()
+        {
+            int negativdb = 0;
+            foreach (int item in tomb)
+            {
+                if (item < 0)
+                {
+                    negativdb += 1; 
+                }              
+            }
+        }
+
             static void Main(string[] args)
         {
-            
+            osszegzes();
+            negativdb();
         }
     }
 }
